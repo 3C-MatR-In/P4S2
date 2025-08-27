@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Paleta de cores streetwear */
+:root {
+    --vermelho-street: #FF3B30;
+    --preto: #000000;
+    --cinza-claro: #F4F4F4;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: var(--preto);
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid var(--vermelho-street);
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: var(--vermelho-street);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--preto);
+}
+
+.inicio-fundo {
+    background-image: url('img/bg-street.jpg'); /* Troque pela sua imagem urbana */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 15rem;
+    width: 40rem;
+    height: auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.botao-inicio {
+    background-color: var(--vermelho-street);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.botao-inicio:hover {
+    background-color: var(--preto);
+    color: #fff;
+}
+
+.display-4 {
+    font-family: 'Anton', sans-serif;
+    text-shadow: -3px 3px var(--vermelho-street);
+    font-size: 3rem;
+}
+
+/* Seção Streetwear */
+#streetwear {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/grafite.png') top right no-repeat,
+                url('img/grafite2.png') bottom left no-repeat;
+    background-size: 180px 180px;
+}
+
+#streetwear h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.8em;
+    color: var(--vermelho-street);
+}
+
+/* Galeria */
+#galeria {
+    background-color: var(--cinza-claro);
+}
+
+.fundo-galeria {
+    background: url('img/grafite3.png') bottom right no-repeat;
+    background-size: 180px 180px;
+    padding: 2rem;
+}
+
+/* Contato */
+#contato {
+    background-image: url('img/bg-street.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--vermelho-street);
+    border: none;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    background-color: var(--preto);
+    color: #fff;
+}
+
+.form-control {
+    background-color: #F1EDEF;
+}
+
+/* Menu de acessibilidade */
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+/* Alto contraste */
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste #streetwear {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .fundo-galeria {
+    background: none;
+}
